@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>GUNDAM DGh — Premium Gunpla Store</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav">
+  <a class="brand" href="#home"><span class="brand-mark">G</span><span>GUNDAM<em>DGh</em></span></a>
+  <nav>
+    <a class="active" href="#home">Trang chủ</a>
+    <a href="#shop">Gunpla</a>
+    <a href="#collections">Bộ sưu tập</a>
+    <a href="#about">Về chúng tôi</a>
+  </nav>
+  <div class="nav-actions">
+    <button class="search-toggle" id="searchToggle">⌕</button>
+    <button class="bag" id="openCart">Giỏ hàng <span id="cartCount">0</span></button>
+  </div>
+</header>
+
+<div class="searchbar" id="searchbar">
+  <input id="searchInput" placeholder="Tìm kiếm Gundam, ví dụ: Sazabi, Barbatos...">
+  <button id="clearSearch">×</button>
+</div>
+
+<section class="hero" id="home">
+  <div class="hero-copy">
+    <div class="kicker"><i></i> PREMIUM GUNPLA STORE</div>
+    <h1>BUILD YOUR<br><span>LEGEND.</span></h1>
+    <p>Những bộ Gunpla được tuyển chọn cho builder. Thiết kế đẹp, chi tiết sắc nét, trải nghiệm lắp ráp đáng nhớ.</p>
+    <div class="hero-buttons">
+      <a href="#shop" class="btn primary">KHÁM PHÁ GUNPLA <b>↗</b></a>
+      <a href="#collections" class="btn ghost">XEM BỘ SƯU TẬP</a>
+    </div>
+    <div class="hero-note"><span>01</span> AUTHENTIC KITS &nbsp;·&nbsp; CAREFULLY PACKED</div>
+  </div>
+  <div class="hero-art">
+    <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+    <div class="mecha">
+      <div class="antenna"></div><div class="head"><i></i><b></b></div>
+      <div class="chest"><span></span><i></i></div>
+      <div class="shoulder left"></div><div class="shoulder right"></div>
+      <div class="arm left"></div><div class="arm right"></div>
+      <div class="body"><b></b><i></i></div>
+      <div class="leg left"></div><div class="leg right"></div>
+      <div class="weapon"></div>
+    </div>
+    <div class="hero-tag"><strong>RX-78</strong><small>GUNDAM</small></div>
+  </div>
+  <div class="hero-lines"></div>
+</section>
+
+<section class="trust">
+  <div><strong>✦</strong><span><b>HÀNG CHÍNH HÃNG</b><small>Kit được tuyển chọn</small></span></div>
+  <div><strong>◈</strong><span><b>ĐÓNG GÓI CAO CẤP</b><small>Bảo vệ hộp tối đa</small></span></div>
+  <div><strong>↗</strong><span><b>GIAO HÀNG TOÀN QUỐC</b><small>Kiểm tra trước khi gửi</small></span></div>
+  <div><strong>◌</strong><span><b>HỖ TRỢ BUILDER</b><small>Tư vấn lựa chọn kit</small></span></div>
+</section>
+
+<main>
+<section class="shop" id="shop">
+  <div class="section-top">
+    <div><div class="kicker">THE COLLECTION</div><h2>GUNPLA <span>SELECT</span></h2></div>
+    <div class="filters">
+      <button class="filter active" data-cat="all">Tất cả</button>
+      <button class="filter" data-cat="HG">HG</button>
+      <button class="filter" data-cat="RG">RG</button>
+      <button class="filter" data-cat="MG">MG</button>
+      <button class="filter" data-cat="MGEX">MGEX</button>
+      <select id="sort">
+        <option value="featured">Nổi bật</option><option value="low">Giá thấp → cao</option><option value="high">Giá cao → thấp</option>
+      </select>
+    </div>
+  </div>
+  <div class="products" id="products"></div>
+</section>
+
+<section class="collections" id="collections">
+  <div class="collection-copy"><div class="kicker">CHOOSE YOUR GRADE</div><h2>TỪNG CẤP ĐỘ.<br><span>MỘT ĐAM MÊ.</span></h2><p>Chọn cấp độ phù hợp với thời gian, kỹ năng và phong cách build của bạn.</p></div>
+  <div class="grade-grid">
+    <button data-cat="HG"><b>HG</b><small>HIGH GRADE</small><em>ENTRY</em></button>
+    <button data-cat="RG"><b>RG</b><small>REAL GRADE</small><em>DETAIL</em></button>
+    <button data-cat="MG"><b>MG</b><small>MASTER GRADE</small><em>PREMIUM</em></button>
+    <button data-cat="MGEX"><b>MGEX</b><small>MASTER GRADE EX</small><em>ULTIMATE</em></button>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="about-image"><div class="seal">DGh<br><small>GUNPLA</small></div><div class="vertical">BUILT FOR BUILDERS</div></div>
+  <div class="about-copy"><div class="kicker">GUNDAM DGh</div><h2>NOT JUST A KIT.<br><span>YOUR NEXT PROJECT.</span></h2><p>GUNDAM DGh được xây dựng như một cửa hàng Gunpla hiện đại: tối giản, dễ chọn và tập trung vào trải nghiệm của builder.</p><div class="numbers"><div><b>50+</b><small>MODEL</small></div><div><b>100%</b><small>CARE</small></div><div><b>24/7</b><small>ONLINE</small></div></div></div>
+</section>
+</main>
+
+<footer><div class="brand"><span class="brand-mark">G</span><span>GUNDAM<em>DGh</em></span></div><div>© 2026 GUNDAM DGh</div><div>contact@gundamdgh.com · 0123 456 789</div></footer>
+
+<div class="overlay" id="cartOverlay"><aside class="cart">
+  <div class="drawer-head"><div><small>YOUR</small><h2>GIỎ HÀNG</h2></div><button id="closeCart">×</button></div>
+  <div id="cartItems" class="cart-items"></div>
+  <div class="cart-bottom"><div><span>Tạm tính</span><strong id="cartTotal">0₫</strong></div><button class="btn primary full" id="checkout">ĐẶT HÀNG <b>→</b></button><small>Thanh toán mô phỏng · chưa kết nối cổng thanh toán</small></div>
+</aside></div>
+
+<div class="overlay" id="detailOverlay"><div class="detail-modal"><button class="modal-x" id="closeDetail">×</button><div id="detailContent"></div></div></div>
+<div class="toast" id="toast"></div>
+<script src="script.js"></script>
+</body></html>
